@@ -4,6 +4,8 @@ import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
+import java.util.Arrays;
+
 import static org.junit.jupiter.api.Assertions.*;
 
 class QuickSortTest {
@@ -25,6 +27,7 @@ class QuickSortTest {
     void name1() {
         int[] input = {5,1,1,2,0,0};
         int[] output = {0,0,1,1,2,5};
+        Arrays.sort(input);
         Assertions.assertArrayEquals(output, quickSort.sort(input));
     }
 

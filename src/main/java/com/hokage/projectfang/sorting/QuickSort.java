@@ -30,13 +30,16 @@ public class QuickSort implements Sort {
 
     private int sortElements(int[] input, final int startIndex, final int endIndex) {
         int pivotValue = input[endIndex];
-        int i = startIndex-1;
-        for (int j= startIndex;j<=endIndex;j++) {
-            if (input[j] <pivotValue) {
-                swap(input,++i,j);
+        int i = startIndex - 1;
+        for (int j = startIndex; j <= endIndex; j++) {
+            if (input[j] < pivotValue) {
+                swap(input, ++i, j);
             }
         }
-         swap(input,++i,endIndex);
+        swap(input, ++i, endIndex);
         return i;
     }
+
+
+
 }
